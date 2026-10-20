@@ -88,6 +88,10 @@ fun Dice( modifier: Modifier = Modifier) {
                         onDoubleTap = {
                             // 雙擊：重置為 0 (回到 dice0)
                             diceNumber = 0
+                        },
+                        onLongPress = {
+                            //長按
+                            diceNumber = 6
                         }
                     )
                 }
